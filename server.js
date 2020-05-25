@@ -12,15 +12,24 @@ app.use(express.json());
 
 // Returns the `notes.html` file.
 app.get("/notes", function(req, res) {
-    res.sendFile(path.join(__dirname, "./public/notes.html"));
-  });
-// Returns the `index.html` file
-app.get("*", function(req, res) {
-    res.sendFile(path.join(__dirname, "./public/index.html"));
-  });
-
+  res.sendFile(path.join(__dirname, "./public/notes.html"));
+});
+// // Returns the `index.html` file
+// app.get("*", function(req, res) {
+//   res.sendFile(path.join(__dirname, "./public/index.html"));
+// });
 
   
+// // The application has a backend `db.json` file that will be used to store and retrieve notes using the `fs` module.
+// // Reads the `db.json` file and returns all saved notes as JSON.
+app.get("/api/notes", function(req, res){
+  fs.readFile(path.join(__dirname, "./db/db.json"), function(err, data) {
+    if (err) throw err;
+    console.log(data);
+        return res.end(data);
+  });
+});
+
 
 
 // Express app server starts listening 
