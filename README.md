@@ -22,7 +22,7 @@ SO THAT I can organize my thoughts and keep track of tasks I need to complete
 
 Write, save, and delete notes. No installation required for usage.
 
-![Note Taker image](https://github.com/ncrutgers/notetaker/tree/master/public/assets/images/notetaker.png)
+![Note Taker image](https://github.com/ncrutgers/notetaker/blob/master/public/assets/images/notetaker.png)
 
 Application URL:
 [Note Taker link]()
