@@ -25,6 +25,5 @@ Write, save, and delete notes. No installation required for usage.
 ![Note Taker image](https://github.com/ncrutgers/notetaker/blob/master/public/assets/images/notetaker.png)
 
 Application URL:
-[Note Taker link]()
-
+[Note Taker link](https://serene-coast-03209.herokuapp.com/)
 
